@@ -1,0 +1,29 @@
+/*
+* Round Images
+*/
+.img-round {
+  border-radius: 100%;
+}
+
+/*
+* Card
+*/
+.card {
+  background: $gradient;
+  box-shadow: $card_shadow;
+  border-radius: $border_radius;
+  padding: $padding_sm;
+  margin-bottom: $margin-lg;
+  text-align: center;
+  color: $white;
+  &__title {
+    margin: $margin_sm 0;
+  }
+  &__desc {
+    margin: 0;
+  }
+}
+
+// .card--small {
+//   max-width: 250px;
+// }

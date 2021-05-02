@@ -1,0 +1,140 @@
+.resume {
+  @include flexBox(row-reverse);
+  margin-bottom: $margin_xs;
+
+  &__title {
+    color: var(--heading-color);
+    font-weight: 400;
+  }
+
+  &__sidebar {
+    width: 35%;
+  }
+
+  &__main {
+    width: 61%;
+    margin-left: 4%;
+  }
+
+  &__img {
+    width: 280px;
+    margin: 0 auto 1em;
+  }
+
+  &__skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__contact {
+    margin: 0;
+    padding: 0;
+    & a {
+      color: var(--heading-color);
+    }
+  }
+
+  &__margin-top-lg {
+    margin-top: $margin-lg;
+  }
+
+  &__category {
+    color: var(--heading-color);
+    text-shadow: 2px 2px 2px var(--heading-shadow);
+    border-bottom: 3px solid var(--heading-color);
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+
+  &__badge {
+    background-color: var(--heading-color);
+    width: 100%;
+    color: var(--badge-color);
+    border-radius: $border_radius;
+    margin: 0 6px 6px 0;
+    text-transform: capitalize;
+    // padding: 6px 8px;
+  }
+  &__badge--progress {
+    background-color: var(--progress-color);
+    // width: 70%;
+    color: var(--badge-color);
+    border-radius: $border_radius 0px 0px $border_radius;
+    // margin: 0 6px 6px 0;
+    text-transform: capitalize;
+    padding: 6px 8px;
+  }
+}
+
+.resume-section {
+  margin-bottom: $margin-lg;
+
+  &__secondary-title {
+    font-weight: 500;
+  }
+
+  &__link {
+    color: var(--heading-color);
+    text-decoration: none;
+    margin-left: $margin_xs;
+  }
+
+  &__time {
+    display: block;
+    margin-top: $margin_sm;
+    color: var(--heading-color);
+    font-style: italic;
+    font-weight: 400;
+    font-size: $font_small;
+  }
+}
+
+.download-resume {
+  background: $gradient;
+  color: $white;
+  border-radius: $border_radius;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 8px 16px;
+}
+
+@media only screen and (max-width: $tablet) {
+  .resume {
+    @include flexBox(column-reverse);
+
+    &__main,
+    &__sidebar {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &__sidebar {
+      margin-bottom: $margin-lg;
+    }
+  }
+}
+
+// Style for print resume
+@media print {
+  body {
+    margin: 10mm 0mm;
+  }
+
+  header,
+  footer,
+  .download-resume {
+    display: none;
+  }
+
+  .container {
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .resume__img {
+    width: 300px;
+  }
+}

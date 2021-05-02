@@ -1,0 +1,54 @@
+// Colors
+$primary: #222831;
+$secondary: #00adb5;
+$primary_dark: #393e46;
+$white: #fff;
+$grey: #ccc;
+
+
+:root {
+  --icon-color: #003566;
+  --heading-color: #003566;
+  --heading-shadow:#00adb5;
+  --badge-color: #fff;
+  --text-color: hsla(0, 0%, 0%, 0.8);
+  --background-color: #fff;
+  --progress-color: #00adb5;
+}
+
+[data-theme="dark"] {
+  --icon-color: #00adb5;
+  --heading-color: #00adb5;
+  --heading-shadow:#222831;
+  --badge-color: #001d3d;
+  --text-color: hsla(255, 100%, 100%, 0.8);
+  --background-color: #393e46;
+  --progress-color: #eeeeee;
+}
+
+$card_shadow: 0.5rem 1.25rem 1.75rem 0 rgba(100, 110, 140, 0.4);
+
+$gradient: linear-gradient(45deg, $secondary, $primary);
+
+// Sizes
+$container_width: 966px;
+$border_radius: 6px;
+
+// Fonts
+$font_small: 16px;
+
+// Space
+$padding_xs: 5px;
+$padding_sm: 10px;
+$padding_me: 20px;
+$padding_mx: 30px;
+
+$margin_xs: 5px;
+$margin_sm: 10px;
+$margin_me: 20px;
+$margin-lg: 26px;
+$margin_mx: 30px;
+
+// Responsive
+$tablet: 768px;
+$mobile: 486px; 
