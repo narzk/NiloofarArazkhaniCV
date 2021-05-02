@@ -17,6 +17,8 @@ import {
   contacts,
   certificates,
   workExperience,
+  languages,
+  honors
 } from "../resume-source"
 
 import AliTaeeResumePDF from "../assets/Resume _ Ali Taee.pdf"
@@ -26,7 +28,7 @@ const Sidebar = () => (
     <Image className="img-round resume__img" />
     <h1 className="resume__title">Niloofar Arazkhani</h1>
     <p style={{'text-align': 'justify'}}>
-    I am a PhD candidate at Sharif University. My strengths are in research and problem-solving.  I specialise in Computational Geometry and have a good academic record from The University of Iran.  I have experience in front end programming,  My hobbies include Reading, country walks, photography and have a blog post. 
+    I am a PhD candidate at Sharif University. My strengths are in research and problem-solving.  I specialise in Computational Geometry and have a good academic record from The Universities of Iran.  I have experience in front end programming,  My hobbies include Reading, country walks, photography and have a blog post. 
     </p>
 
     <CategoryTitle title="contacts" />
@@ -44,6 +46,13 @@ const Sidebar = () => (
     <article className="resume__skills">
       {skills.map(skill => (
         <Badge key={skill.id} title={skill.title} level={skill.level}/>
+      ))}
+    </article>
+
+    <CategoryTitle title="languages" className="resume__margin-top-lg" />
+    <article className="resume__skills">
+      {languages.map(lang => (
+        <Badge key={lang.id} title={lang.title} level={lang.level}/>
       ))}
     </article>
   </aside>
@@ -79,7 +88,7 @@ const Main = () => (
       ))}
     </ol>
 
-    <CategoryTitle title="certificates" />
+    <CategoryTitle title="Publications" />
     <ol className="unbulleted-list">
       {certificates.map(certificate => (
         <ResumeSection
@@ -89,6 +98,16 @@ const Main = () => (
           mainLink={certificate.mainLink}
           mainTitle={certificate.mainTitle}
           secondaryTitle={certificate.secondaryTitle}
+        />
+      ))}
+    </ol>
+    <CategoryTitle title="Awards & honors" />
+    <ol className="unbulleted-list">
+      {honors.map(honor => (
+        <ResumeSection
+          key={honor.id}
+          mainTitle={honor.mainTitle}
+          secondaryTitle={honor.secondaryTitle}
         />
       ))}
     </ol>

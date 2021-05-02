@@ -17,7 +17,7 @@ const IndexPage = () => (
           </span>
         </h1>
         <p style={{'text-align': 'justify'}}>
-        I am a PhD candidate at Sharif University. My strengths are in research and problem-solving.  I specialise in Computational Geometry and have a good academic record from The University of Iran.  I have experience in front end programming,  My hobbies include Reading, country walks, photography and have a blog post. 
+        I am a PhD candidate at Sharif University. My strengths are in research and problem-solving.  I specialise in Computational Geometry and have a good academic record from The Universities of Iran.  I have experience in front end programming,  My hobbies include Reading, country walks, photography and have a blog post. 
         </p>
       </section>
       <section className="card intro__card card--small">

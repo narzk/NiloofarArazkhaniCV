@@ -12,6 +12,13 @@ export const skills = [
   { id: 14, title: "Matlab", level:'70%'  },
 ]
 
+export const languages = [
+  { id: 9, title: "Persian", level: '100%' },
+  { id: 6, title: "English", level: '90%' },
+  { id: 8, title: "French", level:'50%' },
+  { id: 11, title: "Arabic", level:'30%'  }
+]
+
 export const workExperience = [
 
   {
@@ -64,13 +71,15 @@ export const workExperience = [
 export const certificates = [
   {
     id: 0,
-    mainTitle: "Responsive Web Design",
+    mainTitle: "Conference Paper",
     secondaryTitle:
-      "Developer Certification, representing approximately 300 hours of coursework",
-    mainLink:
-      "https://www.freecodecamp.org/certification/alitaee/responsive-web-design",
-    time: "12/2017 – 07/2018",
-    list: [],
+      "Influence Blocking Maximization in Social Network Using Centrality measures, 2019",
+  },
+  {
+    id: 1,
+    mainTitle: "Conference Paper",
+    secondaryTitle:
+      "An Efficient Algorithm for Influence Blocking Maximization based on Community Detection, 2019",
   },
 ]
 
@@ -79,7 +88,7 @@ export const projects = [
     id: 3,
     mainTitle: "PhD student",
     secondaryTitle:
-      "I am having my PhD at Sharif University",
+      "PhD of Software Engineering, Sharif University of Technology",
     mainLink: "http://www.sharif.ir/home",
     time: "09/2020 – Present",
     list: [
@@ -91,10 +100,10 @@ export const projects = [
   },
   {
     id: 0,
-    mainTitle: "Iran bank card ",
-    secondaryTitle: "Customizable Iran bank card.",
-    mainLink: "https://github.com/AliTaee/iran-bank-card",
-    time: "02/2021 – Present",
+    mainTitle: "MSc of Software Engineering",
+    secondaryTitle: " Efficient Algorithms for Minimizing the Spread of Contamination in Social Network, Amirkabir University of Technology",
+    mainLink: "https://aut.ac.ir/",
+    time: "09/2017 – 09/2019",
     list: [
       {
         id: 0,
@@ -104,32 +113,13 @@ export const projects = [
   },
   {
     id: 2,
-    mainTitle: "HTML Banner",
+    mainTitle: "BSc of Computer Science",
     secondaryTitle:
-      "HTML banners with focusing on pure CSS and JavaScript animation and interaction with the user's events also performance and size matters.",
-    mainLink: "https://github.com/AliTaee/html-banner",
-    time: "09/2020 – Present",
-    list: [
-      {
-        id: 0,
-        detail: "HTML, SCSS, pure CSS and JavaScript, Parcel.js.",
-      },
-    ],
+     "Cellular Automata, Amirkabir University of Technology",
+    mainLink: "https://aut.ac.ir/",
+    time: "09/2011 – 09/2015",
   },
-  {
-    id: 1,
-    mainTitle: "Iran Map - WordPress Plugin",
-    mainLink: "https://github.com/AliTaee/Iran-Map-WordPress-Plugin",
-    secondaryTitle:
-      "Add minimal and nice Iran map to your WordPress website. Interactive Iran Map, admin can link each city to specific link.",
-    time: "09/2018 – Present",
-    list: [
-      {
-        id: 0,
-        detail: "WordPress plugin Development, PHP, HTML, CSS.",
-      },
-    ],
-  },
+
 ]
 
 export const contacts = [
@@ -156,5 +146,38 @@ export const contacts = [
     href: "https://github.com/narzk",
     icon: "icon-github",
     text: "Github",
+  },
+]
+
+export const honors = [
+  {
+    id: 0,
+    mainTitle: "National-wide University Entry Exam of Iran",
+    secondaryTitle:
+      "In the top 0.2% among more than 450,000 participants in National-wide University Entry Exam of Iran in Math & Physics; consequently, recognized as Outstanding Student,2011",
+  },
+  {
+    id: 1,
+    mainTitle: "Entrance Exam for master degree",
+    secondaryTitle:
+      "In the top 1% among more than 4000 participants in Software Engineering Entrance Exam for master degree, 2015.",
+  },
+  {
+    id: 2,
+    mainTitle: "Among top students",
+    secondaryTitle:
+      "In the top 10% among all graduate students in Software Engineering field, 2019",
+  },
+  {
+    id: 2,
+    mainTitle: "Entrance Exam for master degree",
+    secondaryTitle:
+      "Rank 14 in entrance exam for PhD candidates ",
+  },
+  {
+    id: 2,
+    mainTitle: "Full scholarship",
+    secondaryTitle:
+      "receiving full scholarship (tuition wavier)",
   },
 ]
